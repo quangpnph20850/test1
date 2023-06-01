@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="cssbanhang.css">
+    <script src="banhang.js"></script>
+    </head>
+<body>
+    <table style="border: 1px solid;">
+      <tr>
+        <th>
+            <input type="checkbox">
+        </th>
+        <th>Hàng hoá</th>
+        <th>Đơn giá</th>
+        <th>Số lượng</th>
+        <th>Thành tiền</th>
+      </tr> 
+      <tr>
+        <th><input type="checkbox"></th>
+        <th>Iphone 9</th>
+        <th>700</th>
+        <th>
+          <input id="iphone9input" type="number" onchange="iphone9()" min="0" value="0">
+        </th>
+        <th><input id="iphone9" type="number" min="0" value="0" readonly></th>
+      </tr>
+      <tr>
+        <th><input type="checkbox"></th>
+        <th>Sam sung</th>
+        <th>400</th>
+        <th><input id="ss" type="number" onchange="ss()" min="0" value="0"></th>
+        <th><input id="sss" type="number" min="0" value="0" class="noboder" readonly></th>
+      </tr>
+      <tr>
+        <th><input type="checkbox"></th>
+        <th>Nokia</th>
+        <th>100</th>
+        <th><input id="nokia" type="number" onchange="nokia()" min="0" value="0"></th>
+        <th><input id="nokoa" type="number" min="0" value="0"  class="noboder" readonly></th>
+      </tr>
+      <tr>
+        <th><input type="checkbox"></th>
+        <th>Sony xperia</th>
+        <th>450</th>
+        <th><input id="sony" type="number" onchange="sony()" min="0" value="0"></th>
+        <th><input id="so" type="number" min="0" value="0"  class="noboder" readonly></th>
+      </tr>
+      <tr>
+        <th><input type="checkbox"></th>
+        <th>motorala</th>
+        <th>180</th>
+        <th><input id="moto" type="number" onchange="moto()" min="0" value="0"></th>
+        <th>
+          <input id="motoo" type="number" onchange="total()" class="noboder"  min="0" value="0" readonly>
+        </th>
+      </tr>
+      <tr>
+        <th><input type="checkbox"></th>
+        <th>oppo</th>
+        <th>600</th>
+        <th><input id="oppo" type="number" onchange="oppo()" min="0" value="0"></th>
+        <th><input id="oppoo" type="number" min="0" value="0" class="noboder"  readonly></th>
+      </tr>
+      <tr>
+        <th><input type="checkbox"></th>
+        <th>Bphone</th>
+        <th>90</th>
+        <th><input id="b" type="number" onchange="bphone()" min="0" value="0"></th>
+        <th><input id="bp" name type="number" min="0" value="0"  class="noboder" readonly></th>
+      </tr>
+      <tr>
+        <th colspan="4">Tổng</th>
+        <th><input id="total" type="number"  class="noboder" readonly></th>
+      </tr>  
+    </table>
+   
+</body>
+</html>
